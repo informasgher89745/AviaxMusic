@@ -4,7 +4,8 @@ from os import getenv
 from dotenv import load_dotenv
 from pyrogram import filters
 
-load_dotenv()
+# Load .env file explicitly
+load_dotenv(dotenv_path="sample.env")
 
 # Get this value from my.telegram.org/apps
 API_ID = int(getenv("API_ID"))
